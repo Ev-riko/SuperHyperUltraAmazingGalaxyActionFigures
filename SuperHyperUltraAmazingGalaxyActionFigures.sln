@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHyperUltraAmazingGalaxyActionFigures", "SuperHyperUltraAmazingGalaxyActionFigures\SuperHyperUltraAmazingGalaxyActionFigures.csproj", "{3730F06F-9E86-4171-A611-E8B757C38143}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3730F06F-9E86-4171-A611-E8B757C38143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3730F06F-9E86-4171-A611-E8B757C38143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3730F06F-9E86-4171-A611-E8B757C38143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3730F06F-9E86-4171-A611-E8B757C38143}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6970CA1C-DC8D-48C9-B8EA-8435DE810816}
+	EndGlobalSection
+EndGlobal

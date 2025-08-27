@@ -1,0 +1,17 @@
+﻿@model Product
+
+<div class="row">
+    <div class="col-8">
+        <img src="@Model.ImagePath" class="img-fluid" alt="@Model.Name">
+    </div>
+    <div class="col-4">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text">@Model.Description</p>
+        <p class="fw-bold fs-5">@Model.Сost</p>
+        <div class="d-flex justify-content-around">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-dark">Вернуться к полкам</a>
+            <a href="#" class="btn btn-primary">Хочу!</a>
+        </div>
+        
+    </div>
+</div>

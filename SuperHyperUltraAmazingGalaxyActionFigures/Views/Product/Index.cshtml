@@ -10,7 +10,7 @@
         <p class="fw-bold fs-5">@Model.Сost</p>
         <div class="d-flex justify-content-around">
             <a asp-controller="Home" asp-action="Index" class="btn btn-dark">Вернуться к полкам</a>
-            <a href="#" class="btn btn-primary">Хочу!</a>
+            <a asp-controller="Cart" asp-action="Add" asp-route-id="@Model.Id" class="btn btn-primary">Хочу!</a>
         </div>
         
     </div>

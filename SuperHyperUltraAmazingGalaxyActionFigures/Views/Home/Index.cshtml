@@ -18,7 +18,7 @@
                     <p class="card-text">@product.Description</p>
                     <div class="d-flex justify-content-around">
                         <p class="fw-bold fs-5">@product.Сost</p>
-                        <a href="#" class="btn btn-primary">Хочу!</a>
+                            <a asp-controller="Cart" asp-action="Add" asp-route-id="@product.Id" class="btn btn-primary">Хочу!</a>
                     </div>
                 </div>
             </div>

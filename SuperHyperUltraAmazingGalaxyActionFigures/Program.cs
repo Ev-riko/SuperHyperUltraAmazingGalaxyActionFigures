@@ -7,6 +7,7 @@ builder.Services.AddControllersWithViews()
     .AddViewLocalization();
 
 builder.Services.AddSingleton<IProductRepository, ProductsInMemoryRepository>();
+builder.Services.AddSingleton<ICartRepository, CartsInMemoryRepository>();
 
 var app = builder.Build();
 

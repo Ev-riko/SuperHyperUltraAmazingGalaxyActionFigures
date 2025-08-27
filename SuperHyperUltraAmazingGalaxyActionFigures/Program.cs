@@ -1,7 +1,12 @@
+using SuperHyperUltraAmazingGalaxyActionFigures;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddViewLocalization();
+
+builder.Services.AddSingleton<IProductRepository, ProductsInMemoryRepository>();
 
 var app = builder.Build();
 

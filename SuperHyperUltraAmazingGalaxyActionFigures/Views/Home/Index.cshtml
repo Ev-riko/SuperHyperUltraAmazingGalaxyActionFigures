@@ -1,13 +1,7 @@
 ﻿@model List<Product>
 
 <div class="row">
-
-
-    <div class="col-3">
-        @* мб левое меню *@
-    </div>
-
-    <div class="col-9">
+    <div class="col">
         <div class="row">
         @foreach (var product in Model)
         {
@@ -17,7 +11,7 @@
                         <a asp-controller="Product" asp-action="Index" asp-route-id="@product.Id" ><h5 class="card-title">@product.Name</h5></a>
                     <p class="card-text">@product.Description</p>
                     <div class="d-flex justify-content-around">
-                        <p class="fw-bold fs-5">@product.Сost</p>
+                            <p class="fw-bold fs-5">@product.Сost &#8381</p>
                             <a asp-controller="Cart" asp-action="Add" asp-route-id="@product.Id" class="btn btn-primary">Хочу!</a>
                     </div>
                 </div>

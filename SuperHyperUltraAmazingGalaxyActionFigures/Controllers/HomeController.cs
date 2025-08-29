@@ -19,6 +19,15 @@ namespace SuperHyperUltraAmazingGalaxyActionFigures.Controllers
             return View(products);
         }
 
+        public IActionResult Catalog()
+        {
+            return RedirectToAction("Index");
+        }
+        public IActionResult Collections()
+        {
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Privacy()
         {
             return View();

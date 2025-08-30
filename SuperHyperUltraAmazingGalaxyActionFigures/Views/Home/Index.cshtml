@@ -3,22 +3,27 @@
 <div class="row">
     <div class="col">
         <div class="row">
-        @foreach (var product in Model)
-        {
-            <div class="card col-4" style="width: 18rem;">
-                <img src="@product.ImagePath" class="img-fluid card-img-top" alt="@product.Name">
-                <div class="card-body">
-                        <a asp-controller="Product" asp-action="Index" asp-route-id="@product.Id" ><h5 class="card-title">@product.Name</h5></a>
-                    <p class="card-text">@product.Description</p>
-                    <div class="d-flex justify-content-around">
+            @foreach (var product in Model)
+            {
+                <div class="card col-3 border-1 border-black border-start-0 rounded-4 p-0">
+                    <div class="h-80 rounded-4 overflow-hidden border-1 border-black border-bottom">
+                        <img src="@product.ImagePath" class="card-img-top rounded-top-4" alt="@product.Name">
+                    </div>
+                    <div class="card-body h-20">
+                        <a asp-controller="Product" asp-action="Index" asp-route-id="@product.Id"><h5 class="card-title">@product.Name</h5></a>
+                        <p class="card-text">@product.Description</p>
+                        <div class="d-flex justify-content-around">
                             <p class="fw-bold fs-5">@product.Сost &#8381</p>
                             <a asp-controller="Cart" asp-action="Add" asp-route-id="@product.Id" class="btn btn-primary">Хочу!</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        }
+            }
         </div>
 
     </div>
 
+</div>
+<div class="nav-item" style="width:120px; height:60px">
+    <a class="btn btn-outline-dark h-100 w-100 rounded-0 border-2 border-end align-content-center" asp-controller="Home" asp-action="Index">Test</a>
 </div>

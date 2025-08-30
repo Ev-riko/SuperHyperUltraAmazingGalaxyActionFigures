@@ -1,4 +1,4 @@
-﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 border-1 border-black py-0" style="height:60px">
     <div class="container-fluid">
         <header>
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SuperHyperUltraAmazingGalaxyActionFigures</a>
@@ -9,17 +9,17 @@
         </button>
         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1">
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="New">Новинки</a>
+                <li class="nav-item" style="width:120px; height:60px">
+                    <a class="btn btn-outline-dark h-100 w-100 rounded-0 border-1 border-top-0 border-bottom-0 align-content-center" asp-controller="Home" asp-action="New">Новинки</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Catalog">Каталог</a>
+                <li class="nav-item" style="width:120px; height:60px">
+                    <a class="btn btn-outline-dark h-100 w-100 rounded-0 border-1 border-start-0 border-top-0 border-bottom-0 align-content-center" asp-controller="Home" asp-action="Catalog">Каталог</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Collections">Коллекции</a>
+                <li class="nav-item" style="width:120px; height:60px">
+                    <a class="btn btn-outline-dark h-100 w-100 rounded-0 border-1 border-start-0 border-top-0 border-bottom-0 align-content-center" asp-controller="Home" asp-action="Collections">Коллекции</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="Index">Корзина @await Component.InvokeAsync("Cart")</a>
+                <li class="nav-item" style="width:120px; height:60px">
+                    <a class="btn btn-outline-dark h-100 w-100 rounded-0 border-1 border-start-0 border-top-0 border-bottom-0 align-content-center" asp-controller="Cart" asp-action="Index">Корзина @await Component.InvokeAsync("Cart")</a>
                 </li>
             </ul>
         </div>

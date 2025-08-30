@@ -4,7 +4,7 @@
     <div class="text-center">
         <h1 class="mb-3">Корзиночка пуста, пора это исправить!</h1>
         <div class="mb-3">
-            <a asp-controller="Home" asp-action="Index" class="p-3 btn btn-dark">&lt;Назад к фигуркам</a>
+            <a asp-controller="Home" asp-action="Index" class="p-3 btn btn-dark rounded-0">&lt;Назад к фигуркам</a>
         </div>
     </div>
 }
@@ -59,7 +59,7 @@ else
                     <h2 class="mb-2">@Model.TotalCost &#8381</h2>
                 </div>
                 <div class="lign-self-end">
-                    <a asp-controller="" asp-action="" class="p-3 btn btn-dark rounded-0">Оформить заказ</a>
+                    <a asp-controller="Order" asp-action="Index" class="p-3 btn btn-dark rounded-0">Оформить заказ</a>
                 </div>
             </div>
         </div>

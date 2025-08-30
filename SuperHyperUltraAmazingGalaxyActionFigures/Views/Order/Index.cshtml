@@ -1,0 +1,29 @@
+﻿<form action="/" method="post">
+    <div class="row">
+        <div class="col-12">
+            <div class="mb-3">
+                <label for="nameFormControl" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" id="nameFormControl" placeholder="Erik">
+            </div>
+            <div class="mb-3">
+                <label for="emailFormControl" class="form-label">Email address</label>
+                <input type="email" name="email" class="form-control" id="emailFormControl" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="phoneFormControl" class="form-label">Phone number</label>
+                <input type="tel" name="phone" class="form-control" id="phoneFormControl" placeholder="+7 (999) 999-99-99">
+            </div>
+            <div class="mb-3">
+                <label for="deliveryAddressFormControl" class="form-label">Delivery Address</label>
+                <input class="form-control" name="address" id="deliveryAddressFormControl">
+            </div>
+            <div class="lign-self-end">
+                <button type="submit" asp-controller="Order" asp-action="Confirm" class="p-3 btn btn-success rounded-0">Подтвердить заказ</button>
+            </div>
+            
+        </div>
+    </div>
+</form>
+<div class="mb-3">
+    <a asp-controller="Home" asp-action="Index" class="p-3 btn btn-dark rounded-0">&lt;Назад к фигуркам</a>
+</div>
